@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: hsl(216, 30%, 68%);
+  font-size: 14px;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+}
+.nav {
+  display: block;
+  position: relative;
+  padding: 25px 0 25px 0;
+  margin: 0 7rem 0 7rem;
+}
+.hamburg {
+  display: none;
+  position: absolute;
+  right: 3rem;
+  top: 17px;
+}
+.hamburg:hover {
+  cursor: pointer;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: right;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: hsl(216, 30%, 68%);
+}
+.nav ul li a:hover {
+  color: hsl(256, 26%, 20%);
+}
+.nav ul li a.active {
+  color: hsl(256, 26%, 20%);
+}
+.navBtn {
+  text-decoration: none;
+  color: hsl(216, 30%, 68%);
+  text-transform: uppercase;
+  border: solid 2px hsl(256, 26%, 20%);
+  padding: 10px 18px 10px 18px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+.navBtn:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: white !important;
+}
+.firstSection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  background-color: hsl(256, 26%, 20%);
+}
+.firstLeft {
+  background-image: url("/images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: left;
+  background-position-y: bottom;
+  padding: 7rem 0 40px 7rem;
+}
+.firstRight {
+  background-image: url("/images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 60%;
+  padding: 8rem 6rem 0 0;
+  margin-bottom: -5rem;
+}
+.firstRight img {
+  width: 100%;
+}
+.firstSection h1 {
+  color: white;
+  padding-top: 35px;
+}
+.firstSection hr {
+  width: 25%;
+  float: left;
+}
+.firstSection p {
+  line-height: 1.5;
+  padding-bottom: 20px;
+  color: hsl(216, 30%, 68%);
+  padding-right: 15px;
+}
+.firstSection button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 2px white;
+  padding: 10px 20px 10px 20px;
+  letter-spacing: 2px;
+  color: white;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.firstSection button:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+.secondSection {
+  color: hsl(256, 26%, 20%);
+  padding: 12rem 7rem 0 7rem;
+}
+.secondSection hr {
+  width: 15%;
+  float: left;
+}
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+.card p {
+  color: hsl(216, 30%, 68%);
+  line-height: 1.5;
+}
+.thirdSection {
+  color: white;
+  padding: 9rem 7rem 0 7rem;
+}
+.thirdSection h1 {
+  font-size: 45px;
+  font-weight: 400;
+  padding: 30px;
+}
+.thirdSection-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0px;
+  background-color: hsl(256, 26%, 20%);
+}
+.thirdSection button {
+  margin: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 2px white;
+  padding: 10px 20px 10px 20px;
+  letter-spacing: 2px;
+  color: white;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.thirdSection button:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+.thirdSection-card div {
+  background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 80%;
+  text-align: right;
+}
+.footer {
+  margin-top: 9rem;
+  font-size: 12px;
+  padding: 5rem 7rem 0 7rem;
+  background-color: hsl(0, 0%, 98%);
+}
+.social-Icons {
+  float: right;
+}
+.social-Icons img {
+  cursor: pointer;
+  padding-left: 15px;
+}
+.footerCard {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.footer ul {
+  padding: 0;
+  margin: 0;
+}
+.footer li {
+  list-style: none;
+  line-height: 2;
+}
+.footer ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 1300px) {
+  .nav {
+    margin: 0 5rem 0 5rem;
+  }
+  .secondSection,
+  .thirdSection,
+  .footer {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  .firstLeft {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    margin: 0 3rem 0 3rem;
+  }
+  .hamburg {
+    display: inline-block;
+    right: 2rem;
+  }
+  .menu {
+    display: none;
+    text-align: center;
+    width: 70%;
+    height: 330px;
+    left: 5rem;
+    top: 4.5rem;
+    border-radius: 6px;
+    background-color: hsl(256, 26%, 20%);
+    background-image: url("/images/bg-pattern-mobile-nav.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    box-shadow: 0 1rem 10rem rgba(0 0 0/0.2), 0 1rem 4rem rgba(0 0 0/0.2);
+  }
+  .nav ul {
+    padding: 20px 0px;
+    position: absolute;
+  }
+  .nav ul li {
+    display: block;
+    padding: 18px 15px;
+  }
+  .nav ul li a {
+    color: white;
+  }
+  .nav ul li a:hover {
+    color: tomato;
+  }
+  .navBtn {
+    color: white;
+    border: solid white;
+  }
+  .secondSection,
+  .thirdSection,
+  .footer {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .firstSection {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .firstLeft {
+    background-image: url("/images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: left;
+    background-position-y: 0;
+    padding: 9rem 3rem 3rem 3rem;
+  }
+  .firstRight {
+    padding: 0;
+  }
+  .secondSection {
+    padding-top: 8rem;
+  }
+  .thirdSection-card {
+    background-image: url("/images/bg-pattern-how-we-work-mobile.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: right;
+    text-align: center;
+    grid-template-columns: auto;
+  }
+  .thirdSection-card h1 {
+    font-size: 45px;
+  }
+  .thirdSection div {
+    background-image: none;
+  }
+  .thirdSection button {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .thirdSection-card div {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 55px;
+  }
+  .nav {
+    margin: 0 2rem 0 2rem;
+  }
+  .secondSection,
+  .thirdSection,
+  .footer {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .firstSection hr {
+    display: none;
+  }
+  .firstLeft {
+    text-align: center;
+    padding: 5rem 2rem 2rem 2rem;
+  }
+  .secondSection {
+    text-align: center;
+  }
+  .secondSection hr {
+    width: 40%;
+    float: none;
+  }
+  .card {
+    grid-template-columns: auto;
+  }
+  .thirdSection-card h1 {
+    font-size: 30px;
+  }
+  .footerCard {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+  }
+  .logo {
+    margin: 0 0 0 1rem;
+  }
+  .nav {
+    margin: 0;
+  }
+  .menu {
+    width: 100%;
+    left: 0;
+    border-radius: 2px;
+  }
+  .hamburg {
+    right: 1rem;
+  }
+  .secondSection,
+  .thirdSection,
+  .footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .firstLeft {
+    padding: 9rem 1rem 1rem 1rem;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footerCard {
+    grid-template-columns: auto;
+  }
+  .social-Icons {
+    padding-top: 20px;
+    display: block;
+    float: none;
+  }
+}
